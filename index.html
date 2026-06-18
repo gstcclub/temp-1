@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>ADAM SCHOLAR | Academic Portfolio</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;700&amp;family=Source+Serif+4:ital,opsz,wght@0,8..60,600;0,8..60,700;1,8..60,600&amp;display=swap" rel="stylesheet"/>
+    
+    <!-- Material Symbols -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    
+    <!-- Tailwind Play CDN (Remove if using build-tool setup with tailwind.config.js) -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+        // Inline config assignment for Tailwind Play CDN
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "inverse-primary": "#c8c6c5",
+                        "secondary": "#5e5e5e",
+                        "on-secondary-container": "#646464",
+                        "surface": "#fcf9f5",
+                        "surface-container-highest": "#e5e2de",
+                        "tertiary-fixed": "#e6e2df",
+                        "on-primary-fixed-variant": "#474746",
+                        "surface-container-low": "#f6f3ef",
+                        "surface-dim": "#dcdad6",
+                        "error": "#ba1a1a",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary-fixed-variant": "#464747",
+                        "primary-container": "#1c1c1c",
+                        "on-primary": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "on-tertiary": "#ffffff",
+                        "inverse-on-surface": "#f3f0ec",
+                        "secondary-fixed-dim": "#c7c6c6",
+                        "on-surface-variant": "#8C8C8C",
+                        "surface-container": "#f0ede9",
+                        "error-container": "#ffdad6",
+                        "tertiary-container": "#1d1c1b",
+                        "on-primary-container": "#858484",
+                        "primary-fixed-dim": "#c8c6c5",
+                        "secondary-container": "#e3e2e2",
+                        "on-error-container": "#93000a",
+                        "on-tertiary-container": "#878482",
+                        "on-tertiary-fixed": "#1c1b1a",
+                        "inverse-surface": "#31302e",
+                        "surface-tint": "#5f5e5e",
+                        "on-primary-fixed": "#1b1b1b",
+                        "on-surface": "#1C1C1C",
+                        "primary-fixed": "#e5e2e1",
+                        "outline": "#8C8C8C",
+                        "on-secondary-fixed": "#1b1c1c",
+                        "background": "#F7F4F0",
+                        "on-background": "#1C1C1C",
+                        "secondary-fixed": "#e3e2e2",
+                        "outline-variant": "#c4c7c7",
+                        "on-tertiary-fixed-variant": "#484645",
+                        "primary": "#1C1C1C",
+                        "on-error": "#ffffff",
+                        "tertiary": "#1C1C1C",
+                        "surface-variant": "#e5e2de",
+                        "surface-bright": "#F7F4F0",
+                        "tertiary-fixed-dim": "#cac6c4",
+                        "surface-container-high": "#ebe8e4"
+                    },
+                    "borderRadius": {
+                        "none": "0",
+                        "DEFAULT": "0",
+                        "lg": "0",
+                        "xl": "0",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "max-width": "1280px",
+                        "margin-desktop": "80px",
+                        "margin-mobile": "24px",
+                        "unit": "8px",
+                        "gutter": "32px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Hanken Grotesk"],
+                        "headline-lg-mobile": ["\"Source Serif 4\""],
+                        "label-caps": ["Hanken Grotesk"],
+                        "caption": ["Hanken Grotesk"],
+                        "headline-md": ["\"Source Serif 4\""],
+                        "headline-display": ["\"Source Serif 4\""],
+                        "headline-lg": ["\"Source Serif 4\""],
+                        "body-md": ["Hanken Grotesk"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                        "label-caps": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "700"}],
+                        "caption": ["14px", {"lineHeight": "1.4", "fontWeight": "400"}],
+                        "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                        "headline-display": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "headline-lg": ["40px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
+
+    <!-- Custom CSS Styles -->
+    <link href="style.css" rel="stylesheet"/>
+    <!-- Scripts -->
+    <script src="script.js" defer></script>
+</head>
+<body class="font-body-md overflow-x-hidden">
+
+    <!-- TopNavBar -->
+    <header class="bg-background border-b border-primary docked full-width top-0 sticky z-50">
+        <div class="flex justify-between items-center w-full px-margin-desktop py-6 max-w-max-width mx-auto">
+            <div class="font-headline-md text-headline-md font-bold text-primary">ADAM SCHOLAR</div>
+            <nav class="hidden md:flex gap-8">
+                <a class="font-body-lg text-body-lg uppercase tracking-widest text-primary font-bold border-b-2 border-primary pb-1 cursor-pointer active:opacity-70" href="#">RESEARCH</a>
+                <a class="font-body-lg text-body-lg uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors duration-200 cursor-pointer active:opacity-70" href="#">PUBLICATIONS</a>
+                <a class="font-body-lg text-body-lg uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors duration-200 cursor-pointer active:opacity-70" href="#">ARCHIVE</a>
+                <a class="font-body-lg text-body-lg uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors duration-200 cursor-pointer active:opacity-70" href="#">CONTACT</a>
+            </nav>
+            <div class="md:hidden">
+                <span class="material-symbols-outlined text-primary">menu</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop">
+        <!-- Hero Section -->
+        <section class="py-[80px] md:py-[120px]">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-end">
+                <div class="md:col-span-8">
+                    <h1 class="font-headline-display text-headline-display mb-8">PROJECT PRESENTATION</h1>
+                    <div class="horizontal-rule mb-8"></div>
+                    <p class="font-body-lg text-body-lg max-w-2xl text-on-surface-variant">
+                        An investigation into the structural integrity of digital archival systems and the socio-technical implications of metadata entropy in the twenty-first century.
+                    </p>
+                </div>
+                <div class="md:col-span-4 flex flex-col items-end">
+                    <div class="font-label-caps text-label-caps mb-2 text-on-surface-variant">LAST UPDATED: 11.2024</div>
+                    <div class="font-label-caps text-label-caps text-on-surface-variant">LOCATION: ZÜRICH, CH</div>
+                </div>
+            </div>
+            <div class="mt-12 w-full h-[614px] relative border border-primary overflow-hidden">
+                <img class="w-full h-full object-cover grayscale brightness-90" data-alt="Scientific lab environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAww9huhFL1xEtbe44fu9DrQq4R5bGH23_CIS8SQ9utxnL-44-2fAoMBMrG_elI7KqvV0ZH7D6vq_7KvioTc_RaopC8qp6-UtZZ3ZF29deXTcApUG7FXQTN-RbZ4LM25s1W6lvLT80XyN1ncMCyEqO_Ulnd_FtgYjT9ZOWUiBovhxYmas3tb7K4F84UESEYBKMvtcpBYNpowd_2M3QlzXYXm3TYZFRKH-8_NnIWeyj9WFMpvGZ3AUhxfN7flXdVwh5u7WLb2MtAHZRG"/>
+            </div>
+        </section>
+
+        <!-- Concept Section -->
+        <section class="py-[80px] md:py-[120px] border-t border-primary">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+                <div class="md:col-span-4">
+                    <h2 class="font-headline-lg text-headline-lg sticky top-32">PROJECT CONCEPT</h2>
+                </div>
+                <div class="md:col-span-8">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-gutter mb-16">
+                        <div class="space-y-6">
+                            <p class="font-body-lg text-body-lg">
+                                The methodology focuses on the intersections of information theory and architectural conservation. By applying rigorous data-modeling techniques to historical archives, we aim to uncover latent patterns in digital decay.
+                            </p>
+                            <p class="font-body-md text-body-md text-on-surface-variant">
+                                Our research utilizes a multi-layered approach, combining quantitative analysis of dataset integrity with qualitative observations of system interfaces. This dual perspective allows for a holistic understanding of how information is preserved, transformed, or lost across temporal boundaries.
+                            </p>
+                            <button class="px-8 py-3 bg-primary text-on-primary font-label-caps uppercase tracking-widest hover:opacity-90 transition-opacity">
+                                READ METHODOLOGY
+                            </button>
+                        </div>
+                        <div class="space-y-8">
+                            <div class="border border-primary p-0 aspect-[4/5]">
+                                <img class="w-full h-full object-cover grayscale" data-alt="Skeletal leaf pattern" src="https://lh3.googleusercontent.com/aida-public/AB6AXuClU5cvbt-pVBq2G5Rdf7TQLKMFMXfRQ5AFcmWh6fMiSkCK1kSEGzI1AL5U6R4VfUrAwjSrEsNGpzmLyL82IHJSFTCfmKxCTurUu7fRfU8bCfEXVo2bz3PqWMLSXtBq9M361nYeYswZW909ChSwdAmj0ah931zyCPXbdqfb4mLeHV5_gvaObv3GcPxiiBGliP8X3etYUvukV206egW333y163ihyewCSvHs1g-rgpYQwjY8-VmeGxvgJXZpom-6bxb3a0QGb8l3sJgI"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full border border-primary aspect-[21/9]">
+                        <img class="w-full h-full object-cover grayscale" data-alt="Geometric minimalist concrete wall layout" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1GlLVfihtlQmjtEgBp_laczC1oFVWGPFLyl1jkbgmnI_yAhs3QMKnvm2oHi0R85BaPxxujoTDG9vJty4zo2ZlTFBOnhbcezH9lZkgiojl9Zq5Ujr9y5MIOLThBCqYWWllyj562bbTExPAv8doFMaVlShzprUPtu0Q2twlDKyYXaNKPz4Vcf6N5AIVvxfGPfW4LZQs_tpGMfcDnjeFCnfdgVAnrYAbte5pVaCN04rTT8dmnt1EUfBV3GPPDT9rYMLMlPJU_jz65gYZ"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Publications Section -->
+        <section class="py-[80px] md:py-[120px] border-t border-primary">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+                <div class="md:col-span-4">
+                    <h2 class="font-headline-lg text-headline-lg">PROJECT NAME &amp; DETAILS</h2>
+                    <p class="font-label-caps text-label-caps mt-4 text-on-surface-variant">CORE RESEARCH PUBLICATIONS</p>
+                </div>
+                <div class="md:col-span-8">
+                    <div class="space-y-0">
+                        <!-- Publication 2024 -->
+                        <div class="group flex flex-col md:flex-row gap-4 md:gap-gutter py-8 border-b border-outline items-start">
+                            <div class="md:w-24 font-label-caps text-label-caps py-1 text-on-surface-variant">2024</div>
+                            <div class="flex-1">
+                                <h3 class="font-headline-md text-headline-md mb-2">A Taxonomy of Digital Voids</h3>
+                                <p class="font-body-md text-body-md text-on-surface-variant mb-4">An exploration of the non-data within large-scale archival infrastructures.</p>
+                                <div class="flex gap-2">
+                                    <span class="px-3 py-1 border border-outline font-label-caps text-label-caps text-on-surface-variant">CASE STUDY</span>
+                                    <span class="px-3 py-1 border border-outline font-label-caps text-label-caps text-on-surface-variant">PEER REVIEWED</span>
+                                </div>
+                            </div>
+                            <div class="md:w-32 flex justify-end">
+                                <span class="material-symbols-outlined text-primary group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                            </div>
+                        </div>
+                        <!-- Publication 2023 -->
+                        <div class="group flex flex-col md:flex-row gap-4 md:gap-gutter py-8 border-b border-outline items-start">
+                            <div class="md:w-24 font-label-caps text-label-caps py-1 text-on-surface-variant">2023</div>
+                            <div class="flex-1">
+                                <h3 class="font-headline-md text-headline-md mb-2">Entropy as a Design Principle</h3>
+                                <p class="font-body-md text-body-md text-on-surface-variant mb-4">How natural decay patterns can inform robust data storage architectures.</p>
+                                <div class="flex gap-2">
+                                    <span class="px-3 py-1 border border-outline font-label-caps text-label-caps text-on-surface-variant">WHITE PAPER</span>
+                                </div>
+                            </div>
+                            <div class="md:w-32 flex justify-end">
+                                <span class="material-symbols-outlined text-primary group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                            </div>
+                        </div>
+                        <!-- Publication 2022 -->
+                        <div class="group flex flex-col md:flex-row gap-4 md:gap-gutter py-8 border-b border-outline items-start">
+                            <div class="md:w-24 font-label-caps text-label-caps py-1 text-on-surface-variant">2022</div>
+                            <div class="flex-1">
+                                <h3 class="font-headline-md text-headline-md mb-2">The Architectural Blueprint of Metadata</h3>
+                                <p class="font-body-md text-body-md text-on-surface-variant mb-4">Mapping the structural similarities between physical and digital archives.</p>
+                                <div class="flex gap-2">
+                                    <span class="px-3 py-1 border border-outline font-label-caps text-label-caps text-on-surface-variant">PUBLISHED WORK</span>
+                                    <span class="px-3 py-1 border border-outline font-label-caps text-label-caps text-on-surface-variant">ARCHIVE</span>
+                                </div>
+                            </div>
+                            <div class="md:w-32 flex justify-end">
+                                <span class="material-symbols-outlined text-primary group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Findings Section -->
+        <section class="py-[80px] md:py-[120px] border-t border-primary">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+                <div class="md:col-span-12 mb-16">
+                    <h2 class="font-headline-lg text-headline-lg">PROJECT FINDINGS</h2>
+                </div>
+                <div class="md:col-span-4 grid grid-cols-1 gap-12">
+                    <div class="border-l-2 border-primary pl-6">
+                        <div class="font-label-caps text-label-caps mb-2 text-on-surface-variant">01 / RETENTION</div>
+                        <div class="font-headline-lg text-headline-lg">94.2%</div>
+                        <p class="font-caption text-caption text-on-surface-variant">Efficiency in long-term data cold storage.</p>
+                    </div>
+                    <div class="border-l-2 border-primary pl-6">
+                        <div class="font-label-caps text-label-caps mb-2 text-on-surface-variant">02 / ACCURACY</div>
+                        <div class="font-headline-lg text-headline-lg">0.02ms</div>
+                        <p class="font-caption text-caption text-on-surface-variant">Latency reduction in query processing.</p>
+                    </div>
+                    <div class="border-l-2 border-primary pl-6">
+                        <div class="font-label-caps text-label-caps mb-2 text-on-surface-variant">03 / SCALE</div>
+                        <div class="font-headline-lg text-headline-lg">12.5PB</div>
+                        <p class="font-caption text-caption text-on-surface-variant">Total analyzed archival volume in Phase I.</p>
+                    </div>
+                    <div class="border-l-2 border-primary pl-6">
+                        <div class="font-label-caps text-label-caps mb-2 text-on-surface-variant">04 / GROWTH</div>
+                        <div class="font-headline-lg text-headline-lg">+18%</div>
+                        <p class="font-caption text-caption text-on-surface-variant">Year-over-year database scalability.</p>
+                    </div>
+                </div>
+                <div class="md:col-span-8 bg-primary-container p-12 flex flex-col justify-between">
+                    <div>
+                        <blockquote class="font-headline-md text-headline-md italic text-on-primary mb-12">
+                            "The preservation of knowledge is not merely a technical challenge, but a fundamental commitment to the continuity of human thought."
+                        </blockquote>
+                        <div class="flex items-end gap-4 h-48 mb-8 border-b border-surface-container-lowest/20 pb-4">
+                            <div class="bg-surface-container-lowest w-full h-[40%]" title="2021"></div>
+                            <div class="bg-surface-container-lowest w-full h-[60%]" title="2022"></div>
+                            <div class="bg-surface-container-lowest w-full h-[85%]" title="2023"></div>
+                            <div class="bg-surface-container-lowest w-full h-[100%]" title="2024"></div>
+                        </div>
+                        <div class="flex justify-between text-surface-container-lowest font-label-caps text-[10px]">
+                            <span>DATASET Q1</span>
+                            <span>DATASET Q2</span>
+                            <span>DATASET Q3</span>
+                            <span>DATASET Q4</span>
+                        </div>
+                    </div>
+                    <div class="mt-8 text-surface-container-lowest/50 font-label-caps text-label-caps">
+                        FIG. 4.2 / COMPARATIVE METADATA STABILITY (2021-2024)
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section class="py-[80px] md:py-[120px] border-t border-primary mb-20">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter mb-16">
+                <div class="md:col-span-4">
+                    <h2 class="font-headline-lg text-headline-lg">PROJECT TEAM</h2>
+                </div>
+                <div class="md:col-span-8">
+                    <p class="font-body-lg text-body-lg">A multidisciplinary cohort specializing in informatics, architectural history, and data science.</p>
+                </div>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-gutter">
+                <!-- Team Member 1 -->
+                <div class="space-y-4">
+                    <div class="aspect-square border border-primary grayscale hover:grayscale-0 transition-all duration-500 overflow-hidden">
+                        <img class="w-full h-full object-cover" data-alt="Portrait Dr. Helena Vance" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1eoeIATt2K0ilwbzVAQjDzjxvKAE3f9iEF6oxstXwaeqHjNywny043cl-jTXHrgAkvdprMJyjZJxngaX-3K_5bD7ZTRFHaXqpF3wDqtNYKhNZ7Q_7SXli_qbm6UtfZ7N12jCIlBMSRR7L8TZjj4Av69EwZjlechvQofw8uiltgo6xr6xWxs0VcVUqfgDv6QUQniC8aMLfrC7em_8JpzJxw-C2Hmp0b_9vLGyCUP1PK8US3v4w2bkZLQfB8Na9xuRvxbID1N6QkPsI"/>
+                    </div>
+                    <div>
+                        <div class="font-label-caps text-label-caps">DR. HELENA VANCE</div>
+                        <div class="font-caption text-caption text-on-surface-variant">Principal Investigator</div>
+                    </div>
+                </div>
+                <!-- Team Member 2 -->
+                <div class="space-y-4">
+                    <div class="aspect-square border border-primary grayscale hover:grayscale-0 transition-all duration-500 overflow-hidden">
+                        <img class="w-full h-full object-cover" data-alt="Portrait Marcus Chen" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRp7yyWpiW_NKT3IHNBzta_g7FeGicHcTj4uVqHjYsITSw-NyrdEpcXNDyK2tWANFu8S4Q0RTa8yMQ8U0pCh7M7q9zKBu1MwFCLEcwvYkgZZgAwFFcd4g0M6i1cKxsshY4oRB0o5zvGjFOf3cWzdOcbERQD_CjrF7MaAUypdpS9P4Zdu7Prc-LPM1jrEDuv5X_qNrAuxUJkRGhQ-xa20KK-leZTJ0EihgyXVOcrT7xwa_ng8ePkJQ3fqlTUlompYFrGyBdjGSQmGdZ"/>
+                    </div>
+                    <div>
+                        <div class="font-label-caps text-label-caps">MARCUS CHEN</div>
+                        <div class="font-caption text-caption text-on-surface-variant">Data Analyst</div>
+                    </div>
+                </div>
+                <!-- Team Member 3 -->
+                <div class="space-y-4">
+                    <div class="aspect-square border border-primary grayscale hover:grayscale-0 transition-all duration-500 overflow-hidden">
+                        <img class="w-full h-full object-cover" data-alt="Portrait Sara Johansson" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_rEgpDEy0-IJXclQX61n5nogU_VH-mbzil6pkytWKSMTMcPYDuqlhAC2g6iJtgVXWX5ADp-VxsvfVZg-QYEOVBe3TcXXQZZfYiV-xh0M9xS2kiStO5w2oFbY1pOxxe33rz_HAAeqXeB-hbJ81yoef2XAoeyMn26dJ5kZjDgHu4BdTXtk7GtkGekwN6cxK0Of5ppu0C9fiel-np4NWUhVgpZbHzE5ts9qTE76gr3T3b0f03-8YAKlVBkJP9ci0mVlh78Oi1chClfRz"/>
+                    </div>
+                    <div>
+                        <div class="font-label-caps text-label-caps">SARA JOHANSSON</div>
+                        <div class="font-caption text-caption text-on-surface-variant">Archival Lead</div>
+                    </div>
+                </div>
+                <!-- Team Member 4 -->
+                <div class="space-y-4">
+                    <div class="aspect-square border border-primary grayscale hover:grayscale-0 transition-all duration-500 overflow-hidden">
+                        <img class="w-full h-full object-cover" data-alt="Portrait Prof. Elias Thorne" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGpU5TFjqLinjmlnc2-iC95nAJMlX_LiPOZLgXEV_3b_08oyh4JDqWeoAYOsgjYkciUTs_jB_LtnpAwkkkV4vtavCNjHLsQ4t1RYnrPX5b4JgixoC6PTCn-3c2MmV20uoxrOwdJJDdtcUWSkDjyO-0z677n9PyID9nADDWFW-ic05-c_w5vZyp6E4v47t-hg45WIkf3bOozfCJc1UhGF5ACiJUGNLRAH3asepzO1nX4quebeXmqxCZDW4hyFK2lXtGoCP0Z1A6dz2J"/>
+                    </div>
+                    <div>
+                        <div class="font-label-caps text-label-caps">PROF. ELIAS THORNE</div>
+                        <div class="font-caption text-caption text-on-surface-variant">Systems Ethicist</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-background border-t border-primary full-width">
+        <div class="flex flex-col md:flex-row justify-between items-center w-full px-margin-desktop py-12 max-w-max-width mx-auto gap-gutter">
+            <div class="font-headline-md text-headline-md text-primary">ADAM SCHOLAR</div>
+            <div class="font-caption text-caption uppercase tracking-tighter text-on-surface-variant">
+                © 2024 ARCHIVAL PRECISION. ALL RIGHTS RESERVED.
+            </div>
+            <div class="flex gap-6">
+                <a class="font-caption text-caption uppercase tracking-tighter text-on-surface-variant hover:underline transition-all" href="#">PRIVACY</a>
+                <a class="font-caption text-caption uppercase tracking-tighter text-on-surface-variant hover:underline transition-all" href="#">TERMS</a>
+                <a class="font-caption text-caption uppercase tracking-tighter text-on-surface-variant hover:underline transition-all" href="#">IMPRINT</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
