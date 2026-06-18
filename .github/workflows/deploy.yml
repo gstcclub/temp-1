@@ -28,6 +28,8 @@ jobs:
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
+        with:
+          enablement: true # This automatically enables Pages if it is not already turned on
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
